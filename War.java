@@ -270,6 +270,26 @@ public class War
 	{
 		state = 2;
 	}
+    /**
+      getDeckSize method
+      @param p---int of the player
+      @return text---the text to be displayed on the GUI
+      
+   */
+
+   public int getDeckSize(int p)
+	{
+		switch(p)
+		{
+			case 1:
+				return p1Deck.cardsRemaining();
+			case 2:
+				return p2Deck.cardsRemaining();
+			default:
+				return 0; 
+		}
+	}
+
 		
 
 }
